@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/12a41c30dd.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Music web</title>
+  </head>
+
+  <body>
+    <header>
+                 <!-- ---------------------------- navbar ------------------------------- -->
+        <div class="navbar">
+          <!-- ------------------------------------------  logo --------------------------------------- -->
+          <div class="logo">
+            <a href="" ><img src="image/logo2.png"></a>
+            <div class="logotext"><a href="">&#x0930;&#x093F;HYTHM&#9834;</a></div>
+            
+          </div>
+             <!-- ------------------------------------ favourite --------------------------- -->
+          <div class="fav"><a href="">Favourite</a></div>
+            <!-- ------------------------------------------  search bar ----------------------------------- -->
+          <div class="wrapper">
+            <div class="search">
+              <span class="uil uil-search">
+              </span>
+              <input placeholder="Search" type="text" />
+            </div>
+            </div>
+               
+            <div class="bell">
+              <i class="bi bi-bell-fill"></i>
+            </div>
+
+            <div class="profile">
+              <img src="image/ana_pic.png">
+            </div>
+
+        </div>
+
+
+             <!-- -------------------------- menu side ------------------------------------------------------- -->
+
+        <div class="menu-side">
+
+          <!-- --------------------------------- playlist side ---------------------------------------- -->
+          <h1>Playlist</h1>
+          <div class="playlist">
+            <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Your Jam</h4>
+            <h4><span></span><i class="bi bi-music-note-beamed"></i> Last Listening</h4>
+            <h4><span></span><i class="bi bi-music-note-beamed"></i> Recommended</h4>
+          </div>
+
+          <!-- ----------------------------------------- side songs list ------------------------------------------- -->
+          <div class="menu-song">
+            <li class="song-items">
+              <span>01</span>
+              <img src="image/1.jpg" alt="">
+              <h5>Anti-Hero
+                  <div class="subtitle">Taylor Swift</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>02</span>
+              <img src="image/2.png" alt="">
+              <h5>On My Way
+                  <div class="subtitle">Alan Walker</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>03</span>
+              <img src="image/3.jpg" alt="">
+              <h5>Shinunoge-e-wa
+                  <div class="subtitle">Fujii Kaze</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>04</span>
+              <img src="image/4.jpg" alt="">
+              <h5>Desi Girl
+                  <div class="subtitle">Vishal Dadlani|Sunidhi Chauhan </div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>05</span>
+              <img src="image/5.jpg" alt="">
+              <h5>Sajna Ji Vari Vari
+                  <div class="subtitle">Sunidhi Chauhan</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>06</span>
+              <img src="image/6.jpg" alt="">
+              <h5>Perfect
+                  <div class="subtitle">Ed Sheeran</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>07</span>
+              <img src="image/7.jpg" alt="">
+              <h5>Sparkle
+                  <div class="subtitle">Radwimps</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>08</span>
+              <img src="image/8.jpg" alt="">
+              <h5>Nadaan Parindey
+                  <div class="subtitle">Mohit Chauhan</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>09</span>
+              <img src="image/9.jpg" alt="">
+              <h5>Main Koi Aisa Geet Gaaon
+                  <div class="subtitle">Abhijeet|Alka Yagnik</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>10</span>
+              <img src="image/10.png" alt="">
+              <h5>Night Changes
+                  <div class="subtitle">One Direction</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>11</span>
+              <img src="image/11.jpg" alt="">
+              <h5>Taarif Karoon
+                  <div class="subtitle">SANAM</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>12</span>
+              <img src="image/12.jpg" alt="">
+              <h5>Tell Me Why
+                  <div class="subtitle">Backstreet Boys</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>13</span>
+              <img src="image/13.jpg" alt="">
+              <h5>Aadat
+                  <div class="subtitle">Atif Aslam</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>14</span>
+              <img src="image/14.jpg" alt="">
+              <h5>Ajab Si
+                  <div class="subtitle">KK</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+            <li class="song-items">
+              <span>15</span>
+              <img src="image/15.jpg" alt="">
+              <h5>Mocking Bird
+                  <div class="subtitle">Eminem</div>
+              </h5>
+              <i class="bi playlist-play bi-heart-fill" id="1"></i>
+            </li>
+
+          </div>
+        </div>
+        
+        
+              <!-- ------------------------------- song side ----------------------------         -->
+        
+        <div class="song-side">
+          <div class="banners">
+            <div class="card"><img src="image/ban2.jpg"></div>
+            <div class="card"><img src="image/ban1.jpg"></div>
+            <div class="card"><img src="image/ban3.jpg"></div>
+          </div>
+
+            <!-- ------------------------------- latest release ---------------------------------------- -->
+          <h5>Latest Release</h5>
+          <div class="music-grid">
+            <div class="grid-songs">
+              <div class="song-img">
+              
+                  <img src="image/1.jpg" alt=""> 
+              <a href="">
+              <div class="play-img">
+                <i class="bi bi-play-fill"></i>
+              </div></a>
+              </div>
+              <div class="song-title">
+                <h6>Anti-Hero</h6>
+                oct 21,2021
+              </div>
+              <div class="song-optn">
+            <!-- ---------------------------------------------- dropdown menu ---------------------------------------    -->   
+                <div class="dropdown">
+                  <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-play-fill"></i> Play Now</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-plus"></i> Add To Queue</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-list-ul"></i> Add To Favourites</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle"></i> Get Info</a></li>
+                  </ul>
+                </div>
+                <p>4:44</p>
+              </div>
+            </div>
+            <div class="grid-songs">
+              <div class="song-img">
+                
+                    <img src="image/6.jpg" alt=""> 
+                <a href="">
+                <div class="play-img">
+                  <i class="bi bi-play-fill"></i>
+                </div></a>
+                </div>
+                <div class="song-title">
+                  <h6>Perfect</h6>
+                  nov 18,2021
+                </div>
+                <div class="song-optn">
+                  
+                  <div class="dropdown">
+                    <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-three-dots"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-play-fill"></i> Play Now</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-plus"></i> Add To Queue</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-list-ul"></i> Add To Favourites</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle"></i> Get Info</a></li>
+                    </ul>
+                  </div>
+                  <p>2:32</p>
+                </div>
+            </div>
+            <div class="grid-songs">
+              <div class="song-img">
+              
+                    <img src="image/7.jpg" alt=""> 
+                <a href="">
+                <div class="play-img">
+                  <i class="bi bi-play-fill"></i>
+                </div></a>
+                </div>
+                <div class="song-title">
+                  <h6>Sparkle</h6>
+                  jun 05,2018
+                </div>
+                <div class="song-optn">
+                  
+                  <div class="dropdown">
+                    <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-three-dots"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-play-fill"></i> Play Now</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-plus"></i> Add To Queue</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-list-ul"></i> Add To Favourites</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle"></i> Get Info</a></li>
+                    </ul>
+                  </div>
+                  <p>5:20</p>
+                </div>
+            </div>
+            <div class="grid-songs">
+              <div class="song-img">
+               
+                    <img src="image/14.jpg" alt=""> 
+                <a href="">
+                <div class="play-img">
+                  <i class="bi bi-play-fill"></i>
+                </div></a>
+                </div>
+                <div class="song-title">
+                  <h6>Ajab Si</h6>
+                  mar 23,2008
+                </div>
+                <div class="song-optn">
+                  
+                  <div class="dropdown">
+                    <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-three-dots"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-play-fill"></i> Play Now</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-plus"></i> Add To Queue</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-list-ul"></i> Add To Favourites</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle"></i> Get Info</a></li>
+                    </ul>
+                  </div>
+                  <p>2:30</p>
+                </div>
+            </div>
+            </div>
+            
+       <!-- --------------------------------------- Artists ------------------------------------------------ -->
+          <h5>Popular Artists</h5>
+
+          <div class="artist">
+            <div class="artist-name">
+              <img src="image/art1.jpeg"> 
+             <a href="playlist.html">
+             <div class="play-img">
+               <i class="bi bi-play-fill"></i>
+              </div></a>
+              <p>&nbsp;&nbsp;&nbsp; Taylor Swift</p>
+            </div>
+
+            <div class="artist-name">
+              <img src="image/art2.jpg"> 
+             <a href="playlist.html">
+             <div class="play-img">
+               <i class="bi bi-play-fill"></i>
+              </div></a>
+              <p>&nbsp;&nbsp;&nbsp; One direction</p>
+            </div>
+
+            <div class="artist-name">
+              <img src="image/art3.jfif"> 
+             <a href="playlist.html">
+             <div class="play-img">
+               <i class="bi bi-play-fill"></i>
+              </div></a>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KK</p>
+            </div>
+
+            <div class="artist-name">
+              <img src="image/art41.jpg"> 
+             <a href="playlist.html">
+             <div class="play-img">
+               <i class="bi bi-play-fill"></i>
+              </div></a>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Atif Aslam</p>
+            </div>
+
+            <div class="artist-name">
+              <img src="image/art5.jpg"> 
+             <a href="playlist.html">
+             <div class="play-img">
+               <i class="bi bi-play-fill"></i>
+              </div></a>
+              <p>&nbsp; Shreya Ghoshal</p>
+            </div>
+
+            <div class="artist-name">
+              <img src="image/art6.jpg"> 
+             <a href="playlist.html">
+             <div class="play-img">
+               <i class="bi bi-play-fill"></i>
+              </div></a>
+              <p>&nbsp;&nbsp;&nbsp; Kishor Kumar</p>
+            </div>
+          </div>
+       <!-- --------------------------------------------------- genre -------------------------------------------- -->
+          <div class="genre">
+            <div class="genre-name"><img src="image/stereo.png">
+              <h6>Music Station</h6>
+            </div>
+          
+
+            <div class="genre-name"><img src="image/love.jpg">
+              <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Love</h6>
+            </div>
+        
+          <div class="genre-name"><img src="image/retro.jpg">
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retro</h6>
+          </div>
+        
+          <div class="genre-name"><img src="image/chill.jpg">
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chill</h6>
+          </div>
+        
+        <div class="genre-name"><img src="image/workout.jpg">
+          <h6>&nbsp;&nbsp;&nbsp;Workout</h6>
+        </div>
+      
+            <div class="genre-name"><img src="image/rock.jpg">
+              <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rock</h6>
+            </div>
+          
+
+          <div class="genre-name"><img src="image/pop.jpg">
+            <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pop</h6>
+          </div>
+        </div>
+       <!-- ------------------------------------------------ mood ------------------------------------------------- -->
+          <div class="mood">
+            <div class="mood-cont">
+              <div class="mood-img">
+               <a href="playlist.html"> <img src="image/party.jpg"></a>
+              </div>
+              <p>&nbsp;&nbsp; Party</p>
+
+            </div>
+
+            <div class="mood-cont">
+              <div class="mood-img">
+               <a href="playlist.html"> <img src="image/electronic.jpg"></a>
+              </div>
+              <p>Electronic</p>
+            </div>
+
+            <div class="mood-cont">
+              <div class="mood-img">
+                <a href="playlist.html"><img src="image/road trip.jpg"></a>
+              </div>
+              <p>Road Trip</p>
+            </div>
+          </div>
+      <!-- -------------------------------------------------------- latest hindi ----------------------------------------- -->
+          <h5>Latest Hindi</h5>
+          <div class="hindi">
+          <div class="hindi-songs">
+           <a href="playlist.html"><img src="image/4.jpg"></a>
+            <p>Jaane Kyun<br> <span>oct 15,2007</span></p>
+            
+          </div>
+
+          <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/h1.jfif"></a>
+             <p>Bang Bang<br> <span>sept 27,2007</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/h2.jpg"></a>
+            <p>Kaabil Hun<br> <span>jun 08,2015</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/h3.jfif"></a>
+             <p>Tum Sath Ho<br> <span>jul 24,2020</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/h4.jfif"></a>
+             <p>Channa Mereya<br> <span>dec 04,2014</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/h5.jpg"></a>
+             <p>Patakha Guddi<br> <span>jan 12,2011</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/h6.jfif"></a>
+             <p>Tatad Tatad<br> <span>aug 01,2015</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/h7.jpg"></a>
+             <p>Badri ki Dulhaniya<br> <span>oct 15,2007</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/h8.jfif"></a>
+             <p>Ik Jindagi<br> <span>jul 27,2022</span></p>
+             
+           </div>
+
+          </div>
+        <!-- ----------------------------------------------- latest english -------------------------------------- -->
+          <h5>Latest English</h5>
+          <div class="hindi">
+          <div class="hindi-songs">
+           <a href="playlist.html"><img src="image/1.jpg"></a>
+            <p>Anti-Hero<br> <span>oct 15,2007</span></p>
+            
+          </div>
+
+          <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/2.png"></a>
+             <p>On my Way<br> <span>sept 27,2007</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/6.jpg"></a>
+            <p>Perfect<br> <span>jun 08,2015</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/10.png"></a>
+             <p>Night Changes<br> <span>jul 24,2020</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/12.jpg"></a>
+             <p>Tell Me Why<br> <span>dec 04,2014</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/15.jpg"></a>
+             <p>Mocking Bird<br> <span>jan 12,2011</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/e1.jfif"></a>
+             <p>Smack That<br> <span>aug 01,2015</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/e2.jpg"></a>
+             <p>Despacito<br> <span>oct 15,2007</span></p>
+             
+           </div>
+
+           <div class="hindi-songs">
+            <a href="playlist.html"><img src="image/e3.jfif"></a>
+             <p>Baby<br> <span>jul 27,2022</span></p>
+             
+           </div>
+
+          </div>
+
+        </div>
+
+        <!-- ------------------------------------  player bar -------------------------------------- -->
+        <div class="master-play">
+          <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+          </div>
+
+          <div>
+            <img src="image/4.jpg" id="poster_master-play">
+            
+          </div>
+          <h5 id="title"> Jaane Kyun
+            <div class="subtitle">Vishal Dadlani</div>
+            </h5>
+          <!-- -------------------------------------- player ---------------------------------------- -->
+            <div class="icons">
+              <i class="bi bi-music-note-beamed"></i>
+              <i class="bi bi-skip-start-fill"></i>
+              <i class="bi bi-play-fill"></i>
+              <i class="bi bi-skip-end-fill"></i>
+              <i class="bi bi-cloud-arrow-down-fill"></i>
+            </div>
+
+            <span id="currentstart">0:00</span>
+            <div class="bar">
+              <input type="range"  id="seek" min="0" max="100">
+              <div class="bar2" class="bar2"></div>
+              <div class="dot"></div>
+            </div>
+            <span id="currentend">0:30</span>
+            <div class="vol">
+              <i class="bi bi-volume-down"></i>
+              <input type="range"  id="vol" min="0" max="100">
+            </div>
+        
+        </div>
+       
+        
+
+                
+             
+    </header>
+  </body>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+ 
+</html>

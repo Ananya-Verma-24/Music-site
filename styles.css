@@ -1,0 +1,832 @@
+/*google font Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ------------------------------------------ logo font ----------------------------------- */
+@import url('https://fonts.cdnfonts.com/css/samarkan');
+ 
+@font-face {
+    font-family: 'Samarkan Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samarkan Normal'), url('SAMARN__.woff') format('woff');
+}
+
+/* ---------------------------------------------- body ------------------------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: #121213;
+    display: grid;
+    place-items: center;
+    
+}
+
+/* --------------------------------------------------- header ------------------------------------------------ */
+header {
+    width: 100%;
+    height: 99%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+/* -------------------------------------------------------  navbar -------------------------------------------------- */
+
+header .navbar {
+    width: 100%;
+    height: 10%;
+    background: #111727;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     align-items: center; 
+     padding-top: 0px;
+    padding-right: 20px;
+    
+    transition: all ease-in-out 1s;
+    position: relative;
+    
+}
+
+header .navbar img {
+    height: 80px;
+    width: 80px;
+
+}
+
+/* --------------------------------------------------------------- logo ------------------------------------------- */
+header .navbar .logo {
+    display: flex;
+    flex-direction: row;
+
+}
+
+header .navbar .logotext {
+    transform: translate(-2px, 15px);
+    font-size: 30px;
+    font-family: 'Samarkan Normal';
+
+    background: -webkit-linear-gradient(#36d1dc, #5b86e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* -------------------------------------------------- favourite ---------------------------------------------------- */
+header .navbar .fav a
+{
+    color: #36d1dc;
+    
+}
+
+header .navbar .fav a:link{
+    color:#36d1dc;
+    text-decoration: none;
+}
+header .navbar .fav a:hover{
+    color:#4c5262;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------- search bar ---------------------------------------------- */
+
+.wrapper {
+    text-align: center;
+    width: 230px;
+   
+  }
+  
+  .search {
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 0.4s;
+  }
+  
+  .search:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .search:hover input {
+    max-width: 180px;
+  }
+  
+  .search input {
+    background: transparent;
+    border: 0;
+    max-width: 0;
+    padding: 0;
+    text-indent: 12px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Poppins";
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .search input::placeholder {
+    color: rgba(255, 255, 255, 0.375);
+  }
+  
+  .search span {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    background: #36d1dc;
+    color: #fff;
+    border-radius: inherit;
+    font-size: 20px;
+    pointer-events: none;
+  }
+
+  /* ---------------------------------------------------- bell icon --------------------------------------- */
+
+  header .navbar .bell i{
+    color: #fff;
+    font-size: 20px;
+    
+  }
+
+  /* ------------------------------------------------------- profile pic ---------------------------------------- */
+
+  header .navbar .profile{
+    
+    border-radius: 50%;
+  }
+
+  header .navbar .profile img{
+    height:60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+/* -------------------------------------------------- side menu  --------------------------------------------- */
+
+header .menu-side,
+.song-side {
+    width: 20%;
+    height: 80%;
+    /* border: 1px solid #fff; */
+    background: #111727;
+    box-shadow: 2px 0px 5px #090f1f;
+    color: #fff;
+    
+}
+
+header .song-side {
+    width: 80%;
+    background: #0b1320;
+    padding: 30px;
+    overflow:scroll;
+    
+}
+
+header .song-side::-webkit-scrollbar {
+    display: none;
+}
+
+
+header .master-play {
+    width: 100%;
+    height: 10%;
+    background: #111727;
+    box-shadow: 0px 3px 8px #090f1f;
+}
+
+header .menu-side h1 {
+    font-size: 20px;
+    margin: 15px 0px 0px 20px;
+    font-weight: 500;
+
+}
+
+header .menu-side .playlist {
+    margin: 40px 0px 0px 20px;
+
+
+}
+
+header .menu-side .playlist h4 {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    color: #4c5262;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+}
+
+header .menu-side .playlist h4:hover {
+    color: #fff;
+}
+
+header .menu-side .playlist h4 span {
+    position: relative;
+    margin-right: 35px;
+}
+
+header .menu-side .playlist h4 span::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #4c5262;
+    border-radius: 50%;
+    top: -1px;
+    transition: .3s linear;
+}
+
+header .menu-side .playlist h4:hover span::before {
+    border: 2px solid #fff;
+
+}
+
+header .menu-side .playlist h4 .bi {
+    display: none;
+
+}
+
+header .menu-side .playlist .active {
+    color: #36e2ec;
+
+}
+
+header .menu-side .playlist .active span {
+    display: none;
+
+}
+
+header .menu-side .playlist .active .bi {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+header .menu-side .menu-song {
+    width: 100%;
+    height: 420px;
+    /* border: 1px solid #fff; */
+    margin-top: 10px;
+    overflow: auto;
+
+}
+
+header .menu-side .menu-song::-webkit-scrollbar {
+    display: none;
+}
+
+header .menu-side .menu-song li {
+    list-style-type: none;
+    position: relative;
+    padding: 5px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+
+}
+
+header .menu-side .menu-song li:hover {
+    background: rgb(105, 105, 105, .1);
+
+}
+
+header .menu-side .menu-song li span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c5262;
+
+}
+
+header .menu-side .menu-song li img {
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
+}
+
+header .menu-side .menu-song li h5 {
+    font-size: 12px;
+    margin-left: 15px;
+    width: 160px;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+header .menu-side .menu-song li h5 .subtitle {
+    font-size: 10px;
+    color: #4c5262;
+}
+
+header .menu-side .menu-song li h5 .bi {
+    position: absolute;
+    right: 15px;
+}
+
+
+/* ------------------------------------------------------ player bar -------------------------------------------- */
+
+header .master-play {
+
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+   flex-direction: row;
+    bottom: 0;
+    right: 0;
+    z-index: 1000000000000000;
+}
+
+header .master-play .wave {
+    width: 30px;
+    height: 30px;
+    
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+header .master-play .wave .wave1 {
+    width: 3px;
+    height: 10px;
+    background: #36e2ec;
+    margin-right: 3px;
+    border-radius: 10px 10px 0px 0px;
+    animation: wave .5s linear infinite;
+}
+
+header .master-play .wave .wave1:nth-child(2) {
+    height: 13px;
+    animation-delay: .4s;
+
+}
+
+header .master-play .wave .wave1:nth-child(3) {
+    height: 8px;
+    animation-delay: .8s;
+}
+
+@keyframes wave {
+
+    0% {
+        height: 10px;
+    }
+
+    50% {
+        height: 15px;
+    }
+
+    100% {
+        height: 10px;
+    }
+
+}
+
+
+header .master-play img{
+    height: 35px;
+    width: 35px;
+}
+
+
+header .master-play h5{
+    width: 130px;
+    margin-left: 15px;
+    color: #fff;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+header .master-play h5 .subtitle{
+    font-size: 11px;
+    color: #4c5262;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+header .master-play .icons{
+    font-size: 20px;
+    color: #fff;
+    margin: 0px 20px 0px 40px;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+header .master-play .icons .bi{
+    cursor: pointer;
+    outline: none;
+    margin: 0px 10px 0px 10px;
+}
+
+header .master-play span{
+    color: #fff;
+    width: 32px;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+header .master-play #currentstart{
+    margin: 0px 0px 0px 20px;
+}
+
+
+header .master-play .bar{
+    position: relative;
+    width: 43%;
+    height: 2px;
+    background: rgb(105, 105, 170, .1);
+    margin: 0px 15px 0px 10px;
+}
+
+header .master-play .bar .bar2{
+    position: absolute;
+    background: #36e2ec;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    transition: 1s linear ;
+}
+
+header .master-play .bar .dot{
+    position: absolute;
+    background: #36e2ec;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    left: 0%;
+    top: -1.5px;
+    transition: 1s linear ;
+}
+
+
+header .master-play .bar .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #36e2ec;
+    border-radius: 50%;
+    left: -5px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px #36e2ec;
+}
+
+header .master-play .bar input{
+    position: absolute;
+    width: 100%;
+    top: -7px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999999999999;
+    opacity: 0;
+}
+
+header .master-play .vol {
+    margin:0px 0px 0px 50px;
+}
+
+header .master-play .vol .bi{
+    color: #fff;
+    font-size: 30px;
+}
+
+header .master-play .vol input{
+    position: relative;
+    color: #fff;
+    top: -10px;
+    height: 3px;
+}
+
+/* ----------------------------------------------------- song side ------------------------------------------------ */
+
+/* ----------------------------------------------- banner images --------------------------------------------- */
+header .song-side .banners{
+    width:100%;
+    height:200px;
+    /* border: 1px solid #36e2ec; */
+     display: flex;
+     /* flex-wrap: wrap; */
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+}
+
+header .song-side .banners:hover .card{
+    transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+    transform-style: preserve-3d;
+}
+
+.card{
+    width:350px;
+    height:200px;
+    background-color: #2e2929;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+ header .song-side .banners .card:hover{
+    transform: translate3d(0px,0px,0px) scale3d(1.1,1.1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+    transform-style: preserve-3d;
+    
+    box-shadow: 0px 4px 4px #36d1dc;
+}
+header .song-side .banners img{
+    width:350px;
+    height:200px;
+    border-radius: 5px;
+    
+
+}
+
+/* header .song-side .banners img:hover{
+    cursor: pointer;
+    
+
+} */
+
+
+
+header .song-side h5{
+    color: #fff;
+    font-size: 17px;
+}
+
+/* ----------------------------------------------------- latest release ----------------------------------- */
+header .song-side .music-grid{
+    width:100%;
+    height: 200px;
+    /* border: 1px solid #36e2ec; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    position: relative;
+   
+}
+
+
+header .song-side .music-grid .grid-songs{
+    width:47%;
+    height: 85px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* border: 1px solid #980d98; */
+}
+
+header .song-side .music-grid .grid-songs img{
+    width: 80px;
+    height: 80px;
+}
+
+header .song-side .music-grid .grid-songs .song-img .play-img{
+    background-color: #4c5262;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: -94%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s linear;
+
+}
+
+header .song-side .music-grid .grid-songs .song-img .play-img:hover{
+    
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+
+header .song-side .music-grid .grid-songs .song-img .play-img i{
+    font-size: 50px;
+
+}
+
+header .song-side .music-grid .grid-songs .song-title h6{
+    
+    color: #fff;
+}
+
+header .song-side .music-grid .grid-songs .song-title{
+    width: 100px;
+    position: relative;
+    top: 20px;
+    font-size:10px;
+    margin-left: 10px;
+    color: #4c5262;
+}
+
+
+ header .song-side .music-grid .grid-songs .song-optn{
+    margin-left: 300px;
+    margin-top: 10px;
+}
+header .song-side .music-grid .grid-songs .song-optn i{
+    margin-left: 0px;
+    font-size: 15px;
+}
+header .song-side .music-grid .grid-songs .song-optn p{
+    font-size: 13px;
+    color: #4c5262;
+}
+
+/* --------------------- dropdown menu ------------------- */
+.song-optn .dropdown .dropdown-menu{
+    background: #4c5262;
+    color: #4c5262;
+}
+
+/* -------------------------------------------- Artists ------------------------------------------- */
+header .song-side .artist{
+    width: 100%;
+    height: 170px;
+    /* border: 1px solid #980d98; */
+    display: flex;
+    justify-content: space-between;
+}
+
+header .song-side .artist .artist-name img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    
+}
+
+
+header .song-side .artist .artist-name .play-img{
+    background-color: #4c5262;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+    top: -77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s linear;
+
+}
+
+header .song-side .artist .artist-name .play-img:hover{
+    
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+
+header .song-side .artist .artist-name .play-img i{
+    font-size: 50px;
+
+}
+
+header .song-side .artist .artist-name p{
+    position: relative;
+    top: -75%;
+
+}
+
+
+header .song-side  a{
+   color: white;
+}
+
+/* ------------------------------------------- genre ------------------------------------------------- */
+header .song-side .genre{
+    width: 100%;
+    height: 120px;
+    /* border: 1px solid #980d98; */
+    margin: 20px 0px 10px 0px;
+    background: #071a47;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .song-side .genre .genre-name img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+header .song-side .genre .genre-name h6{
+    position: relative;
+    top:-52%;
+    left:15%;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+/* ------------------------------------------------------ mood ------------------------------------------ */
+header .song-side .mood{
+    width: 100%;
+    height: 150px;
+    margin:40px 0px 40px 0px;
+    /* border: 1px solid #980d98; */
+    display: flex;
+    justify-content: space-around;
+}
+
+header .song-side .mood .mood-cont{
+    width: 300px;
+    height: 150px;
+    /* border: 1px solid #980d98; */
+    
+}
+
+header .song-side .mood .mood-cont p{
+    /* position: relative;
+    top:-50%;
+    left: -50%; */
+    color: #fff;
+    text-shadow: 1px 1px 4px #121213;
+    font-size: 20px;
+    position: relative;
+  top: -60%;
+  left: 35%;
+  transform: translate(50%, );
+  cursor: pointer;
+
+    
+    /* border: 1px solid #980d98; */
+    
+}
+
+header .song-side .mood .mood-cont .mood-img{
+    width: 300px;
+    height: 150px;
+    /* border: 1px solid #980d98; */
+    overflow: hidden;
+   
+    
+}
+
+header .song-side .mood .mood-cont .mood-img img{
+    width: 300px;
+    height: 150px;
+    /* object-fit: contain; */
+    transition: all 0.4s;
+    
+    
+    
+}
+
+header .song-side .mood .mood-cont .mood-img img:hover{
+   transform: scale(1.5);
+    
+    
+}
+
+/* ------------------------------------------- latest hindi/english ---------------------- */
+
+header .song-side .hindi{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid #980d98; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+header .song-side .hindi .hindi-songs img{
+    width: 100px;
+    height: 130px;
+    border-radius: 10%;
+    
+}
+
+header .song-side .hindi .hindi-songs p{
+    margin-top: 10px;
+    font-size: 12px;
+    
+}
+header .song-side .hindi .hindi-songs span{
+   color: #4c5262;
+    font-size: 10px;
+    
+}
